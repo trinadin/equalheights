@@ -5,19 +5,15 @@ var equalHeights = {
 			var equalChild = jQuery(this).find(item);
 			var maxHeight = -1;
 
-			setTimeout( function() {
+			jQuery(equalChild).each(function() {
+				if(jQuery(this).height() > maxHeight) {
+					maxHeight = jQuery(this).height();
+				}
+			});
 
-				jQuery(equalChild).each(function() {
-					if(jQuery(this).height() > maxHeight) {
-						maxHeight = jQuery(this).height();
-					}
-				});
-
-				jQuery(equalChild).each(function() {
-					jQuery(this).css('min-height', maxHeight);
-				});
-
-			}, 500);
+			jQuery(equalChild).each(function() {
+				jQuery(this).css('min-height', maxHeight);
+			});
 
 		});
 	},
