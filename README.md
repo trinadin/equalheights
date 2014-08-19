@@ -1,6 +1,6 @@
 # Simple jQuery Equal Heights Object
 
-This was a "scratch my own itch" type of thing. Just add the object to your custom JS file, or wherever, and call it where you need it (usually on <i>load</i> and <i>resize</i>).
+This was a "scratch my own itch" type of thing. Just add the object to your custom JS file, or wherever, and call it where you need it (usually on <i>load</i> and <i>resize</i>). I've found it most useful to designate two classes for items that need equalizing, as well as their container. For example, <i>equal-container</i> and <i>equal-item</i>. Then you simply add those onto the appropriate elements in your HTML.
 
 ## The Details
 
@@ -31,7 +31,7 @@ jQuery(window).on('resize', function() {
 });
 ```
 
-## Care to contribute?
+## Care to Contribute?
 
 Create a new pull request or issue!
 
