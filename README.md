@@ -11,7 +11,7 @@ The object contains two methods:
 | equalHeights.set<i>(container,item)</i>  | Equalizes min-height of selected items within selected container  |
 | equalHeights.clear<i>(container,item)</i>  | Clears min-height of selected items within selected container  |
 
-Each method takes two parameters that are both currently required:
+Each method has two parameters that are both currently required:
 
 | Param  | Description |
 | ------------- | ------------- |
