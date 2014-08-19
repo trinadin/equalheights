@@ -1,6 +1,6 @@
 # Simple jQuery Equal Heights Object
 
-This was a "scratch my own itch" type of thing.
+This was a "scratch my own itch" type of thing. Just add the object to your custom JS file, or wherever, and call it where you need it (usually on <i>load</i> and <i>resize</i>).
 
 ## The Details
 
@@ -8,8 +8,8 @@ The object contains two methods:
 
 | Method  | Description |
 | ------------- | ------------- |
-| equalHeights.set_(container,item)_  | Equalizes min-height of selected items within selected container  |
-| equalHeights.clear_(container,item)_  | Clears min-height of selected items within selected container  |
+| equalHeights.set<i>(container,item)</i>  | Equalizes min-height of selected items within selected container  |
+| equalHeights.clear<i>(container,item)</i>  | Clears min-height of selected items within selected container  |
 
 Each method takes two parameters that are both currently required:
 
