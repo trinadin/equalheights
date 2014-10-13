@@ -2,9 +2,6 @@ var equalHeights = {
 	set: function(container, item) {
 		jQuery(container).each(function() {
 
-			container = container || '.equal-container';
-			item = item || '.equal-item';
-
 			var equalChild = jQuery(this).find(item);
 			var maxHeight = -1;
 
@@ -22,9 +19,6 @@ var equalHeights = {
 	},
 	clear: function(container, item) {
 		jQuery(container).each(function() {
-
-			container = container || '.equal-container';
-			item = item || '.equal-item';
 
 			var equalChild = jQuery(this).find(item);
 
