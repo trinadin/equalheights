@@ -41,6 +41,9 @@ You are free to share, distribute, modify, or whatever the heck else you want to
 
 ### Changelog
 
+#### 1.0.4
+- Removed upcoming default values feature
+
 #### 1.0.3
 - Now removing min-height attribute instead of updating it
 
