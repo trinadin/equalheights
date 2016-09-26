@@ -6,13 +6,13 @@ var equalHeights = {
 			var maxHeight = -1;
 
 			jQuery(equalChild).each(function() {
-				if(jQuery(this).height() > maxHeight) {
-					maxHeight = jQuery(this).height();
+				if(jQuery(this).outerHeight() > maxHeight) {
+					maxHeight = jQuery(this).outerHeight();
 				}
 			});
 
 			jQuery(equalChild).each(function() {
-				jQuery(this).css('min-height', maxHeight);
+				jQuery(this).css('height', maxHeight);
 			});
 
 		});

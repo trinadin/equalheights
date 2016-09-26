@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Equal Heights Example</title>
+		<style>
+			.equal-container {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto 20px;
+				overflow: auto;
+			}
+			.equal-item {
+				float: left;
+				width: 30%;
+				margin: 0 1%;
+				padding: 10px;
+				box-sizing: border-box;
+				text-align: center;
+				color: #fff;
+			}
+			.equal-container:nth-of-type(1) .equal-item:nth-of-type(1) {
+				background: #ff0000;
+			}
+			.equal-container:nth-of-type(1) .equal-item:nth-of-type(2) {
+				background: #00ff00;
+			}
+			.equal-container:nth-of-type(1) .equal-item:nth-of-type(3) {
+				background: #0000ff;
+			}
+			.equal-container:nth-of-type(2) .equal-item:nth-of-type(1) {
+				background: #0000ff;
+			}
+			.equal-container:nth-of-type(2) .equal-item:nth-of-type(2) {
+				background: #ff0000;
+			}
+			.equal-container:nth-of-type(2) .equal-item:nth-of-type(3) {
+				background: #00ff00;
+			}
+			.equal-container:nth-of-type(3) .equal-item:nth-of-type(1) {
+				background: #00ff00;
+			}
+			.equal-container:nth-of-type(3) .equal-item:nth-of-type(2) {
+				background: #0000ff;
+			}
+			.equal-container:nth-of-type(3) .equal-item:nth-of-type(3) {
+				background: #ff0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="equal-container">
+			<div class="equal-item">
+				<p>2 Lines of Text</p>
+				<p>2 Lines of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>3 Lines of Text</p>
+				<p>3 Lines of Text</p>
+				<p>3 Lines of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>1 Line of Text</p>
+			</div>
+		</div>
+		<div class="equal-container">
+			<div class="equal-item">
+				<p>5 Lines of Text</p>
+				<p>5 Lines of Text</p>
+				<p>5 Lines of Text</p>
+				<p>5 Lines of Text</p>
+				<p>5 Lines of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>4 Lines of Text</p>
+				<p>4 Lines of Text</p>
+				<p>4 Lines of Text</p>
+				<p>4 Lines of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>3 Lines of Text</p>
+				<p>3 Lines of Text</p>
+				<p>3 Lines of Text</p>
+			</div>
+		</div>
+		<div class="equal-container">
+			<div class="equal-item">
+				<p>2 Lines of Text</p>
+				<p>2 Lines of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>1 Line of Text</p>
+			</div>
+			<div class="equal-item">
+				<p>2 Lines of Text</p>
+				<p>2 Lines of Text</p>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="equalheights.js"></script>
+		<script>
+			jQuery(window).on('load', function() {
+				equalHeights.set('.equal-container', '.equal-item');
+			});
+			jQuery(window).on('resize', function() {
+				equalHeights.clear('.equal-container', '.equal-item');
+				equalHeights.set('.equal-container', '.equal-item');
+			});
+		</script>
+	</body>
+</html>
