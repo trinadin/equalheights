@@ -41,6 +41,9 @@ You are free to share, distribute, modify, or whatever the heck else you want to
 
 ### Changelog
 
+#### 1.0.5
+- Replace height with outerHeight and add a sample file
+
 #### 1.0.4
 - Removed upcoming default values feature
 
